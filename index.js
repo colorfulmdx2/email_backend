@@ -28,8 +28,8 @@ app.use(function(req, res, next) {
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-let smtp_login = process.env.SMTP_LOGIN || 'colorfulmdx2@gmail.com'
-let smtp_password = process.env.SMTP_PASSWORD || 'hxcc4458'
+let smtp_login = process.env.SMTP_LOGIN || 'viktor.work.acc.partnership@gmail.com'
+let smtp_password = process.env.SMTP_PASSWORD || 'colorfulmdx2260296260296'
 
 let transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -75,3 +75,4 @@ let port = process.env.PORT || 3010
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
+
